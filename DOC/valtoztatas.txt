@@ -1,0 +1,81 @@
+
+
+Config > config.php
+// Alap urlek
+//define('BASE_URL', 'http://localhost/blog-gyak');
+define('BASE_URL', 'http://localhost/marci_blog_gyak');
+
+//define('DB_DATABASE', 'blog');
+define('DB_DATABASE', 'marci');
+
+//define('DB_NAME', 'blog');
+define('DB_NAME', 'marci');
+
+
+#############################
+Templates > public > post > index.view.php
+
+
+<?php 
+//require_once 'C:\xampp\htdocs\blog-gyak\Config\bootstrap.php' ; 
+?>
+<?php require_once 'Config/bootstrap.php'; ?>
+
+#####################################
+
+header.view.php
+        <!--<link href="http://localhost/blog-gyak/Helpers/styles.css" rel="stylesheet" />-->
+        <link href="Helpers/styles.css" rel="stylesheet" />
+
+             <!--  <link rel="icon" type="file:///C:/xampp/htdocs/blog-gyak/Helpers/favicon.ico" href="assets/favicon.ico" />-->
+        <link rel="icon" type="Helpers/favicon.ico" href="assets/favicon.ico" />
+
+################################
+topnavbar.view.php
+
+                <!--<a class="navbar-brand" href="http://localhost/blog-gyak/">Williy Fog a Föld körül</a>-->
+                <a class="navbar-brand" href="index.php">Williy Fog a Föld körül</a>
+
+                          <!-- <li class="nav-item"><a class="nav-link" href="http://localhost/blog-gyak/create-post.php">Cikkek hozzáadása</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="create-post.php">Cikkek hozzáadása</a></li>
+                       <!-- <li class="nav-item"><a class="nav-link" href="http://localhost/blog-gyak/private-post-dashboard.php">Privát cikkek</a></li>  -->
+                        <li class="nav-item"><a class="nav-link" href="private-post-dashboard.php">Privát cikkek</a></li>
+                       <!--  <li class="nav-item"><a class="nav-link" href="http://localhost/blog-gyak/private-user.php">Szerzők</a></li>  -->
+                        <li class="nav-item"><a class="nav-link" href="private-user.php">Szerzők</a></li>
+
+
+##############################################
+create.view.php
+
+<?php //require_once 'C:\xampp\htdocs\blog-gyak\Config\bootstrap.php'; ?>
+<?php require_once 'Config/bootstrap.php'; ?>
+
+
+######################################
+private > posts.view.php
+
+<?php //require_once 'C:\xampp\htdocs\blog-gyak\Config\bootstrap.php'; ?>
+<?php require_once 'Config/bootstrap.php'; ?>
+
+######################################
+
+private > edit.view.php
+<?php //require_once 'C:\xampp\htdocs\blog-gyak\Config\bootstrap.php'; ?>
+<?php require_once 'Config/bootstrap.php'; ?>
+
+##################################
+Templates\private\users\index.view.php
+
+<?php // require_once 'C:\xampp\htdocs\blog-gyak\Config\bootstrap.php'; ?>
+<?php require_once 'Config/bootstrap.php'; ?>
+
+
+############################
+
+index.php
+
+
+
+
+
+
