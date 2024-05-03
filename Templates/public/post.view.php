@@ -1,8 +1,9 @@
 <?php 
 
-require_once 'C:\xampp\htdocs\blog-gyak\Config\bootstrap.php' ;
+//require_once 'C:\xampp\htdocs\blog-gyak\Config\bootstrap.php' ;
+require_once 'Config/bootstrap.php' ;
 require_once TEMPLATE_PATH . '\common\header.view.php'; 
- include TEMPLATE_PATH . '/common/topnavbar.view.php'; ?>
+ //include TEMPLATE_PATH . '/common/topnavbar.view.php'; ?>
 
         <!-- Page content-->
         <div class="container mt-5">
@@ -13,19 +14,20 @@ require_once TEMPLATE_PATH . '\common\header.view.php';
                         <!-- Post header-->
                         <header class="mb-4">
                             <!-- Post title-->
-                            <h1 class="fw-bolder mb-1" value="<?=$article['title']?> </h1>
+                            <h1 class="fw-bolder mb-1" value="<?=$post['title']?> </h1>
                             <!-- Post meta content-->
-                            <div class="text-muted fst-italic mb-2">Posted on January 1, 2023 by Start Bootstrap</div>
+                            <div class="text-muted fst-italic mb-2"><?=$post['title']?></div>
                             <!-- Post categories-->
-                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>
+                     <!--       <a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>
                             <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a>
+-->
                         </header>
                         <!-- Preview image figure-->
                         <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
                         <!-- Post content-->
                         <section class="mb-5">
-                            <p class="fs-5 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe.</p>
-                            <p class="fs-5 mb-4">The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
+                            <p class="fs-5 mb-4"><?php echo $post["summary"]; ?></p>
+                            <p class="fs-5 mb-4"><?php echo $post["articleText"]; ?></p>
                             <p class="fs-5 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
                             <h2 class="fw-bolder mb-4 mt-5">I have odd cosmic thoughts every day</h2>
                             <p class="fs-5 mb-4">For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.</p>
@@ -35,7 +37,7 @@ require_once TEMPLATE_PATH . '\common\header.view.php';
                 </div>
                 
         <!-- Footer-->
-       <?php include TEMPLATE_PATH . '/common/footer.view.php'; ?>
+       <?php //include TEMPLATE_PATH . '/common/footer.view.php'; ?>
        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

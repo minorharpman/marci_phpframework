@@ -24,6 +24,7 @@ class PublicPostController
     public function show($id) {
         $postRepository = new PostRepository();
         $post = $postRepository->getById($id);
+        //var_dump($post );
         view('public/post', ['post' => $post]); // Átadod az egyedi cikket
     }
 }
